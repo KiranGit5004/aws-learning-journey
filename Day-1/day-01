@@ -1,8 +1,9 @@
 # Day 1 - AWS Fundamentals
 
-## What is Cloud Computing?
+# What is Cloud Computing?
 
 Cloud Computing is the delivery of computing services such as:
+
 - Servers
 - Storage
 - Databases
@@ -10,11 +11,13 @@ Cloud Computing is the delivery of computing services such as:
 - Software
 - Analytics
 - Artificial Intelligence
+
 over the internet instead of owning and maintaining physical hardware.
 
 ## Traditional Approach
 
 Before cloud computing:
+
 - Companies purchased servers.
 - Managed data centers.
 - Handled maintenance.
@@ -23,6 +26,7 @@ Before cloud computing:
 ## Cloud Approach
 
 With cloud computing:
+
 - Resources are rented on demand.
 - Pay only for what you use.
 - Scale up or down anytime.
@@ -30,9 +34,9 @@ With cloud computing:
 
 ---
 
-## Why Cloud Computing?
+# Why Cloud Computing?
 
-### Problems with Traditional Infrastructure
+## Problems with Traditional Infrastructure
 
 - High initial cost
 - Hardware maintenance
@@ -40,31 +44,40 @@ With cloud computing:
 - Long deployment times
 - Risk of hardware failure
 
-### Benefits of Cloud
+## Benefits of Cloud
 
-#### Cost Savings
+### Cost Savings
+
 No upfront investment in hardware.
 
-#### Scalability
+### Scalability
+
 Increase or decrease resources whenever needed.
 
-#### High Availability
+### High Availability
+
 Applications can run across multiple locations.
 
-#### Faster Deployment
+### Faster Deployment
+
 Create servers within minutes.
 
-#### Global Reach
+### Global Reach
+
 Deploy applications worldwide.
 
-#### Security
+### Security
+
 Cloud providers offer advanced security features.
 
 ---
-## What is AWS?
+
+# What is AWS?
 
 AWS (Amazon Web Services) is a cloud computing platform provided by Amazon.
+
 It offers more than 200 cloud services including:
+
 - Compute
 - Storage
 - Networking
@@ -72,21 +85,25 @@ It offers more than 200 cloud services including:
 - Security
 - Analytics
 - Machine Learning
+
 AWS follows a Pay-As-You-Go pricing model.
 
 ---
 
-## Types of Cloud Deployment Models
+# Types of Cloud Deployment Models
 
-### 1. Public Cloud
+## 1. Public Cloud
+
 Infrastructure is owned and managed by a cloud provider.
 
 ### Examples
+
 - AWS
 - Microsoft Azure
 - Google Cloud Platform
 
 ### Advantages
+
 - Low cost
 - Easy scalability
 - No hardware management
@@ -94,26 +111,32 @@ Infrastructure is owned and managed by a cloud provider.
 ---
 
 ## 2. Private Cloud
+
 Infrastructure is dedicated to a single organization.
 
 ### Advantages
+
 - More control
 - Enhanced security
 - Better compliance
 
 ### Disadvantages
+
 - Higher cost
 - Requires maintenance
 
 ---
 
 ## 3. Hybrid Cloud
+
 Combination of Public Cloud and Private Cloud.
 
 ### Example
+
 Sensitive data remains on-premises while applications run in AWS.
 
 ### Advantages
+
 - Flexibility
 - Cost optimization
 - Better disaster recovery
@@ -127,9 +150,11 @@ AWS operates data centers across the world.
 The infrastructure consists of:
 
 ## 1. Regions
+
 A Region is a geographical area where AWS has data centers.
 
 ### Examples
+
 - us-east-1 (N. Virginia)
 - ap-south-1 (Mumbai)
 - eu-west-1 (Ireland)
@@ -143,22 +168,28 @@ A Region is a geographical area where AWS has data centers.
 ---
 
 ## 2. Availability Zones (AZs)
+
 Each Region contains multiple Availability Zones.
-An Availability Zone consists of one or more isolated data centers inside a region.
+
+An Availability Zone consists of one or more data centers.
 
 ### Example
+
 Mumbai Region:
+
 - ap-south-1a
 - ap-south-1b
 - ap-south-1c
 
 ### Benefits
+
 - High availability
 - Fault tolerance
 
 ---
 
 ## 3. Edge Locations
+
 Edge Locations are used by AWS services like CloudFront.
 
 ### Purpose
@@ -169,21 +200,23 @@ Edge Locations are used by AWS services like CloudFront.
 
 ---
 
-## AWS Shared Responsibility Model
+# AWS Shared Responsibility Model
 
 Security responsibilities are shared between AWS and the customer.
 
-### AWS Responsibility (Security OF the Cloud)
+## AWS Responsibility (Security OF the Cloud)
 
 AWS manages:
+
 - Physical security
 - Hardware
 - Networking infrastructure
 - Data center operations
 
-### Customer Responsibility (Security IN the Cloud)
+## Customer Responsibility (Security IN the Cloud)
 
 Customers manage:
+
 - IAM Users
 - Passwords
 - Security Groups
@@ -192,18 +225,19 @@ Customers manage:
 
 ---
 
-## Cloud Service Models
+# Cloud Service Models
 
-### 1. IaaS (Infrastructure as a Service)
+## 1. IaaS (Infrastructure as a Service)
 
 AWS provides infrastructure.
 
 You manage:
+
 - Operating System
 - Applications
 - Data
 
-#### Examples
+### Examples
 
 - Amazon EC2
 - Amazon EBS
@@ -211,27 +245,29 @@ You manage:
 
 ---
 
-### 2. PaaS (Platform as a Service)
+## 2. PaaS (Platform as a Service)
 
 AWS manages infrastructure and operating systems.
 
 You manage:
+
 - Application Code
 - Data
 
-#### Examples
+### Examples
 
 - AWS Elastic Beanstalk
 - AWS RDS
 
 ---
 
-### 3. SaaS (Software as a Service)
+## 3. SaaS (Software as a Service)
 
 Provider manages everything.
+
 Users simply use the application.
 
-#### Examples
+### Examples
 
 - Gmail
 - Salesforce
@@ -239,7 +275,7 @@ Users simply use the application.
 
 ---
 
-## Advantages of AWS
+# Advantages of AWS
 
 - Pay-As-You-Go Pricing
 - Global Infrastructure
@@ -249,38 +285,3 @@ Users simply use the application.
 - Security
 - Flexibility
 - Large Service Portfolio
-
----
-
-## Key Interview Questions
-
-### What is Cloud Computing?
-
-Cloud Computing is the delivery of computing services over the internet on a pay-as-you-go basis.
-
-### What is AWS?
-
-AWS is Amazon's cloud computing platform that provides on-demand cloud services.
-
-### What is a Region?
-
-A Region is a geographical area containing AWS data centers.
-
-### What is an Availability Zone?
-
-An Availability Zone is one or more data centers within a Region designed for high availability.
-
-### What is Public Cloud?
-
-A cloud environment shared by multiple customers and managed by a cloud provider.
-
-### What is the Shared Responsibility Model?
-
-AWS secures the cloud infrastructure, while customers secure their resources and data.
-
-<<<<<<< HEAD
----
-=======
----
-
->>>>>>> a52ebfc48e63618ad3c399b59d0850b69e29d190
