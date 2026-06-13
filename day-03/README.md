@@ -303,3 +303,4 @@ Deletes instance permanently.
 * EC2 supports various workloads through different instance types.
 
 ---
+
