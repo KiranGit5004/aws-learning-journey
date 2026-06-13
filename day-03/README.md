@@ -301,3 +301,5 @@ Deletes instance permanently.
 * Multiple pricing models are available.
 * CloudWatch is used for monitoring.
 * EC2 supports various workloads through different instance types.
+
+  ---
