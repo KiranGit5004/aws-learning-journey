@@ -93,7 +93,7 @@ Create Subnet.
 
 ## Step 2: Create Public Subnet
 
-![Public Subnet Created](screenshots/03-Public-subnets-created.png)
+![Public Subnet Created](screenshots/03-Public-Subnetc-created.png)
 
 ---
 
