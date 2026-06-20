@@ -65,7 +65,7 @@ Subnet      Subnet
 
 ---
 
-# AWS Services Used
+# AWS Services Used 
 
 | Service                   | Purpose                                        |
 | ------------------------- | ---------------------------------------------- |
