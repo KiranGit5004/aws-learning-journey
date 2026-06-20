@@ -65,7 +65,7 @@ Subnet      Subnet
 
 ---
 
-# AWS Services Used
+# AWS Services Used 
 
 | Service                   | Purpose                                        |
 | ------------------------- | ---------------------------------------------- |
@@ -247,18 +247,7 @@ Day-07/
 ├── Highly-Available-Web-Application-Lab.md
 │
 └── screenshots/
-    ├── 01-vpc-created.png
-    ├── 02-vpc-resources.png
-    ├── 03-bastion-host-running.png
-    ├── 04-security-groups.png
-    ├── 05-launch-template.png
-    ├── 06-target-group-created.png
-    ├── 07-load-balancer-created.png
-    ├── 08-auto-scaling-group.png
-    ├── 09-healthy-targets.png
-    ├── 10-application-working.png
-    ├── 11-instance-terminated.png
-    └── 12-asg-recreated-instance.png
+    ├── 01-
 ```
 
 ---
