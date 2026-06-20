@@ -179,6 +179,9 @@ Amazon Linux 2023
 Instance Type:
 t2.micro
 
+VPC:
+Select Created VPC (eg:- Production-VPC)
+
 Subnet:
 Public Subnet A
 
@@ -199,14 +202,14 @@ Navigate:
 EC2 → Launch Templates
 ```
 
-Allow Auto Scaling guidance
-
 Create:
 
 ```text
 Name:
 App-Template
 ```
+
+Allow Auto Scaling guidance [checkbox]
 
 Configuration:
 
@@ -272,14 +275,12 @@ Path: /
 
 ---
 
-### Register targets to target group after autoscalling group done.
-
 # Step 6: Create Application Load Balancer
 
 Navigate:
 
 ```text
-EC2 → Load Balancers
+EC2 → Load Balancers → create ALB
 ```
 
 Configuration:
@@ -291,15 +292,15 @@ Application-ALB
 Scheme:
 Internet Facing
 
-Security Group:
-ALB-SG
-```
+VPC:
+Select Created VPC (eg:- Production-VPC)
 
 Select:
-
-```text
 Public Subnet A
 Public Subnet B
+
+Security Group:
+ALB-SG
 ```
 
 Listener:
@@ -308,7 +309,8 @@ Listener:
 HTTP : 80
 ```
 
-Forward To:
+Forward to target groups
+Select Target Group:
 
 ```text
 Application-TG
@@ -334,14 +336,15 @@ Launch Template:
 App-Template
 ```
 
-Select:
+Select Your VPC:
+eg:- Production-VPC
 
 ```text
 Private Subnet A
 Private Subnet B
 ```
 
-Attach:
+Attach to an existing LB:
 
 ```text
 Application-TG
@@ -359,7 +362,27 @@ Create ASG.
 
 ---
 
-# Step 8: Verify Deployment
+# Step 8: Register targets to target group after autoscalling group done.
+
+Navigate:
+
+```text
+EC2 → Target Groupa
+```
+
+Select:
+
+```text
+Your Created Target Group
+```
+
+Go to:
+
+```text
+Targets → Register targets → Select Target Instances →  Include as pending below → Register pending targets.
+```
+
+# Step 9: Verify Deployment
 
 Verify:
 
@@ -381,7 +404,7 @@ State: Active
 
 ---
 
-# Step 9: Test Application
+# Step 10: Test Application
 
 Copy ALB DNS Name.
 
@@ -399,7 +422,7 @@ Expected Output:
 
 ---
 
-# Step 10: Test Auto Scaling
+# Step 11: Test Auto Scaling
 
 Terminate one instance from the Auto Scaling Group.
 
@@ -417,7 +440,7 @@ Healthy
 
 ---
 
-# Step 11: Verify High Availability
+# Step 12: Verify High Availability
 
 Even after terminating one instance:
 
